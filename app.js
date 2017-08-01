@@ -52,7 +52,7 @@ $(function(){
     $('#board li').removeClass('x');
     turns = 0;
   } else if ($(this).hasClass('disable')) {
-    alert ("This spot is already filled");
+    alert("This spot is already filled");
   } else if ( turns % 2 === 0) {
     turns ++;
     $(this).text("O");
@@ -67,7 +67,7 @@ $(function(){
       spot3.hasClass('o') && spot6.hasClass('o') && spot9.hasClass('o')||
       spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o')
     ) {
-      alert ("winner: O");
+      alert("winner: O");
       turns = 0;
     }
     } else {
